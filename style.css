@@ -1,0 +1,1450 @@
+/* =========================================================
+   RAKHI WEBSITE - COMPLETE STYLE
+   Pink + Peach + Golden Raksha Bandhan Theme
+========================================================= */
+
+
+/* =========================================================
+   BASIC RESET
+========================================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Trebuchet MS", Arial, sans-serif;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+
+/* =========================================================
+   COMMON BACKGROUND
+========================================================= */
+
+.page-one,
+.page-two,
+.final-page {
+    background:
+        radial-gradient(circle at 15% 20%, rgba(255, 190, 210, 0.45), transparent 25%),
+        radial-gradient(circle at 85% 20%, rgba(255, 220, 170, 0.45), transparent 25%),
+        linear-gradient(
+            135deg,
+            #fff5f7,
+            #ffe8ee,
+            #fff1df,
+            #ffe5e9
+        );
+
+    background-attachment: fixed;
+}
+
+
+/* =========================================================
+   PAGE ONE - WELCOME PAGE
+========================================================= */
+
+.page-one {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding: 30px 15px;
+}
+
+
+/* =========================================================
+   DECORATIVE FLOWERS - PAGE ONE
+========================================================= */
+
+.flower {
+    position: fixed;
+    z-index: 0;
+    font-size: 45px;
+    animation: floatingFlower 4s ease-in-out infinite;
+    pointer-events: none;
+}
+
+.flower1 {
+    top: 8%;
+    left: 7%;
+}
+
+.flower2 {
+    top: 20%;
+    right: 8%;
+    animation-delay: 1s;
+}
+
+.flower3 {
+    bottom: 15%;
+    left: 10%;
+    animation-delay: 2s;
+}
+
+.flower4 {
+    bottom: 8%;
+    right: 10%;
+    animation-delay: 3s;
+}
+
+@keyframes floatingFlower {
+
+    0%,
+    100% {
+        transform: translateY(0) rotate(0deg);
+    }
+
+    50% {
+        transform: translateY(-12px) rotate(5deg);
+    }
+}
+
+
+/* =========================================================
+   WELCOME CONTAINER
+========================================================= */
+
+.welcome-container {
+    width: 100%;
+    max-width: 650px;
+    position: relative;
+    z-index: 2;
+}
+
+
+/* =========================================================
+   WELCOME CARD
+========================================================= */
+
+.welcome-card {
+    background: rgba(255, 255, 255, 0.93);
+    padding: 45px 40px;
+    border-radius: 35px;
+
+    text-align: center;
+
+    box-shadow:
+        0 25px 60px rgba(170, 75, 100, 0.18),
+        0 5px 20px rgba(255, 170, 190, 0.18);
+
+    border: 1px solid rgba(220, 130, 150, 0.2);
+
+    backdrop-filter: blur(10px);
+}
+
+
+/* =========================================================
+   TOP DECORATION
+========================================================= */
+
+.top-decoration {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+
+/* =========================================================
+   SMALL HEADING
+========================================================= */
+
+.small-heading {
+    color: #c44d70;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 5px;
+    margin-bottom: 18px;
+}
+
+
+/* =========================================================
+   PAGE ONE HEADING
+========================================================= */
+
+.welcome-card h1 {
+    color: #71394e;
+    font-size: 48px;
+    line-height: 1.15;
+    margin-bottom: 20px;
+}
+
+.welcome-card h1 span {
+    color: #c94d70;
+}
+
+
+/* =========================================================
+   RAKHI SYMBOL
+========================================================= */
+
+.rakhi-symbol {
+    font-size: 60px;
+    margin: 15px 0;
+    animation: rakhiFloat 2.5s ease-in-out infinite;
+}
+
+@keyframes rakhiFloat {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-8px);
+    }
+}
+
+
+/* =========================================================
+   WELCOME TEXT
+========================================================= */
+
+.welcome-text {
+    color: #805568;
+    font-size: 18px;
+    line-height: 1.7;
+    margin: 15px auto;
+    max-width: 450px;
+}
+
+.enter-text {
+    color: #9a6879;
+    font-size: 15px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+
+/* =========================================================
+   INPUT BOX
+========================================================= */
+
+.input-box {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    width: 100%;
+    max-width: 420px;
+
+    margin: 0 auto 18px;
+
+    padding: 14px 18px;
+
+    border: 2px solid #f1bfd0;
+    border-radius: 15px;
+
+    background: #fffafb;
+
+    transition: 0.3s;
+}
+
+.input-box:focus-within {
+    border-color: #d75b7d;
+
+    box-shadow:
+        0 0 0 4px rgba(215, 91, 125, 0.1);
+}
+
+.input-box span {
+    font-size: 22px;
+}
+
+.input-box input {
+    width: 100%;
+
+    border: none;
+    outline: none;
+
+    background: transparent;
+
+    font-size: 16px;
+    color: #633c4d;
+}
+
+.input-box input::placeholder {
+    color: #b58b99;
+}
+
+
+/* =========================================================
+   OPEN BUTTON
+========================================================= */
+
+.open-button {
+    border: none;
+    outline: none;
+
+    padding: 15px 30px;
+
+    border-radius: 30px;
+
+    background: linear-gradient(
+        135deg,
+        #d64f75,
+        #ed7695
+    );
+
+    color: white;
+
+    font-size: 16px;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    box-shadow:
+        0 8px 20px rgba(205, 75, 110, 0.25);
+
+    transition: 0.3s;
+}
+
+.open-button:hover {
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 12px 25px rgba(205, 75, 110, 0.35);
+}
+
+.open-button:active {
+    transform: scale(0.97);
+}
+
+
+/* =========================================================
+   ERROR MESSAGE
+========================================================= */
+
+.error-message {
+    color: #d43e5f;
+    font-size: 14px;
+    margin-top: 12px;
+    min-height: 20px;
+}
+
+
+/* =========================================================
+   BOTTOM DECORATION
+========================================================= */
+
+.bottom-decoration {
+    margin-top: 25px;
+    font-size: 24px;
+}
+
+
+/* =========================================================
+   PAGE TWO - RAKHI PAGE
+========================================================= */
+
+.page-two {
+    min-height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 30px 15px;
+
+    position: relative;
+}
+
+
+/* =========================================================
+   WISH CONTAINER
+========================================================= */
+
+.wish-container {
+    width: 100%;
+    max-width: 650px;
+    position: relative;
+    z-index: 2;
+}
+
+
+/* =========================================================
+   WISH CARD
+========================================================= */
+
+.wish-card {
+    background: rgba(255, 255, 255, 0.94);
+
+    padding: 45px 30px;
+
+    border-radius: 35px;
+
+    text-align: center;
+
+    box-shadow:
+        0 25px 60px rgba(170, 75, 100, 0.18);
+
+    border: 1px solid rgba(220, 130, 150, 0.2);
+}
+
+
+/* =========================================================
+   SPECIAL TEXT
+========================================================= */
+
+.special-text {
+    color: #c34d70;
+
+    font-size: 14px;
+
+    font-weight: bold;
+
+    letter-spacing: 4px;
+
+    margin-bottom: 18px;
+}
+
+
+/* =========================================================
+   BROTHER NAME
+========================================================= */
+
+.wish-card h1 {
+    color: #71394e;
+
+    font-size: 38px;
+
+    margin-bottom: 20px;
+}
+
+
+/* =========================================================
+   TOUCH TEXT
+========================================================= */
+
+.touch-text {
+    color: #9a6879;
+
+    font-size: 18px;
+
+    line-height: 1.7;
+
+    margin-bottom: 20px;
+}
+
+.touch-text small {
+    font-size: 14px;
+}
+
+
+/* =========================================================
+   RAKHI WRAPPER
+========================================================= */
+
+.rakhi-wrapper {
+    position: relative;
+
+    width: 330px;
+    height: 260px;
+
+    margin: 20px auto;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    cursor: pointer;
+}
+
+
+/* =========================================================
+   RAKHI THREAD
+========================================================= */
+
+.rakhi-thread {
+    position: absolute;
+
+    width: 150px;
+    height: 12px;
+
+    background: linear-gradient(
+        90deg,
+        #d83f65,
+        #f49aaf,
+        #d83f65
+    );
+
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    border-radius: 10px;
+
+    box-shadow:
+        0 3px 5px rgba(160, 50, 70, 0.2);
+}
+
+.left-thread {
+    left: 0;
+}
+
+.right-thread {
+    right: 0;
+}
+
+
+/* =========================================================
+   RAKHI
+========================================================= */
+
+.rakhi {
+    position: relative;
+
+    width: 150px;
+    height: 150px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    transition: 0.4s;
+
+    z-index: 2;
+}
+
+.rakhi-wrapper:hover .rakhi {
+    transform: scale(1.08) rotate(3deg);
+}
+
+
+/* =========================================================
+   OUTER RAKHI
+========================================================= */
+
+.rakhi-outer {
+    position: absolute;
+
+    width: 145px;
+    height: 145px;
+
+    border-radius: 50%;
+
+    background:
+        radial-gradient(
+            circle,
+            #ffd65e,
+            #ed9d24
+        );
+
+    box-shadow:
+        0 8px 20px rgba(200, 130, 30, 0.3);
+}
+
+
+/* =========================================================
+   RAKHI PETALS
+========================================================= */
+
+.rakhi-petal {
+    position: absolute;
+
+    width: 48px;
+    height: 48px;
+
+    background: #d84d78;
+
+    border-radius: 50% 50% 45% 45%;
+
+    left: 50%;
+    top: 50%;
+
+    transform-origin: center bottom;
+}
+
+
+/* Individual petals */
+
+.petal1 {
+    transform: translate(-50%, -100%) rotate(0deg);
+}
+
+.petal2 {
+    transform: translate(-50%, -100%) rotate(45deg);
+}
+
+.petal3 {
+    transform: translate(-50%, -100%) rotate(90deg);
+}
+
+.petal4 {
+    transform: translate(-50%, -100%) rotate(135deg);
+}
+
+.petal5 {
+    transform: translate(-50%, -100%) rotate(180deg);
+}
+
+.petal6 {
+    transform: translate(-50%, -100%) rotate(225deg);
+}
+
+.petal7 {
+    transform: translate(-50%, -100%) rotate(270deg);
+}
+
+.petal8 {
+    transform: translate(-50%, -100%) rotate(315deg);
+}
+
+
+/* =========================================================
+   RAKHI MIDDLE
+========================================================= */
+
+.rakhi-middle {
+    position: absolute;
+
+    width: 75px;
+    height: 75px;
+
+    border-radius: 50%;
+
+    background: linear-gradient(
+        135deg,
+        #ffe99a,
+        #f2ad32
+    );
+
+    box-shadow:
+        0 4px 10px rgba(180, 120, 30, 0.25);
+
+    z-index: 3;
+}
+
+
+/* =========================================================
+   CENTER JEWEL
+========================================================= */
+
+.center-jewel {
+    position: absolute;
+
+    width: 55px;
+    height: 55px;
+
+    border-radius: 50%;
+
+    background: white;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    font-size: 28px;
+
+    z-index: 4;
+
+    box-shadow:
+        0 4px 10px rgba(150, 70, 80, 0.2);
+}
+
+
+/* =========================================================
+   WISH FOOTER
+========================================================= */
+
+.footer-text {
+    color: #a46b7d;
+
+    font-size: 14px;
+
+    margin-top: 25px;
+}
+
+
+/* =========================================================
+   FINAL PAGE
+========================================================= */
+
+.final-page {
+    min-height: 100vh;
+
+    position: relative;
+
+    padding: 60px 20px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: flex-start;
+}
+
+
+/* =========================================================
+   FINAL DECORATIONS
+========================================================= */
+
+.final-decoration {
+    position: fixed;
+
+    z-index: 0;
+
+    pointer-events: none;
+
+    animation: decorationFloat 5s ease-in-out infinite;
+}
+
+.flower-one {
+    top: 8%;
+    left: 5%;
+    font-size: 48px;
+}
+
+.flower-two {
+    top: 22%;
+    right: 7%;
+    font-size: 45px;
+    animation-delay: 1s;
+}
+
+.flower-three {
+    bottom: 18%;
+    left: 6%;
+    font-size: 45px;
+    animation-delay: 2s;
+}
+
+.flower-four {
+    bottom: 7%;
+    right: 8%;
+    font-size: 48px;
+    animation-delay: 3s;
+}
+
+.heart-one {
+    top: 45%;
+    left: 8%;
+    font-size: 35px;
+}
+
+.heart-two {
+    top: 65%;
+    right: 8%;
+    font-size: 30px;
+    animation-delay: 1s;
+}
+
+.heart-three {
+    bottom: 25%;
+    right: 15%;
+    font-size: 28px;
+    animation-delay: 2s;
+}
+
+.sparkle-one {
+    top: 30%;
+    left: 17%;
+    font-size: 28px;
+}
+
+.sparkle-two {
+    top: 55%;
+    right: 18%;
+    font-size: 28px;
+}
+
+.sparkle-three {
+    bottom: 15%;
+    left: 17%;
+    font-size: 35px;
+}
+
+@keyframes decorationFloat {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-15px);
+    }
+}
+
+
+/* =========================================================
+   FINAL CONTAINER
+========================================================= */
+
+.final-container {
+    width: 100%;
+
+    max-width: 900px;
+
+    position: relative;
+
+    z-index: 2;
+}
+
+
+/* =========================================================
+   FINAL CARD
+========================================================= */
+
+.final-card {
+    background: rgba(255, 255, 255, 0.94);
+
+    padding: 50px 35px;
+
+    border-radius: 45px;
+
+    text-align: center;
+
+    box-shadow:
+        0 30px 70px rgba(160, 70, 95, 0.2);
+
+    border: 1px solid rgba(220, 130, 150, 0.2);
+
+    backdrop-filter: blur(10px);
+}
+
+
+/* =========================================================
+   FINAL TOP
+========================================================= */
+
+.final-top {
+    display: flex;
+
+    justify-content: center;
+
+    gap: 22px;
+
+    font-size: 28px;
+
+    margin-bottom: 20px;
+}
+
+
+/* =========================================================
+   FINAL SMALL TITLE
+========================================================= */
+
+.final-small-title {
+    color: #c34d70;
+
+    font-size: 14px;
+
+    font-weight: bold;
+
+    letter-spacing: 6px;
+
+    margin-bottom: 20px;
+}
+
+
+/* =========================================================
+   FINAL MAIN TITLE
+========================================================= */
+
+.final-card > h1 {
+    color: #71394e;
+
+    font-size: 58px;
+
+    line-height: 1.15;
+
+    margin-bottom: 18px;
+}
+
+
+/* =========================================================
+   FINAL BROTHER NAME
+========================================================= */
+
+#finalBrotherName {
+    color: #c94d70;
+
+    font-size: 38px;
+
+    margin-bottom: 30px;
+}
+
+
+/* =========================================================
+   📸 BROTHER PHOTO - FULL PHOTO BOX
+========================================================= */
+
+.photo-frame {
+    width: 430px;
+
+    height: 470px;
+
+    margin: 20px auto 25px;
+
+    padding: 8px;
+
+    border-radius: 25px;
+
+    background: linear-gradient(
+        135deg,
+        #ffe38a,
+        #e9a32d,
+        #fff0a9,
+        #e9a32d
+    );
+
+    box-shadow:
+        0 0 20px rgba(238, 176, 55, 0.55),
+        0 12px 35px rgba(150, 80, 40, 0.2);
+}
+
+
+/* =========================================================
+   PHOTO INNER AREA
+========================================================= */
+
+.photo-glow {
+    width: 100%;
+
+    height: 100%;
+
+    border-radius: 18px;
+
+    overflow: hidden;
+
+    background: #ffffff;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+}
+
+
+/* =========================================================
+   📸 FULL PHOTO
+========================================================= */
+
+.photo-glow img {
+    width: 100%;
+
+    height: 100%;
+
+    display: block;
+
+    /*
+       IMPORTANT:
+       contain = complete photo is visible
+       without cropping.
+    */
+
+    object-fit: contain;
+
+    background: white;
+
+    border-radius: 15px;
+}
+
+
+/* =========================================================
+   PHOTO CAPTION
+========================================================= */
+
+.photo-caption {
+    color: #9b6678;
+
+    font-size: 16px;
+
+    margin: 12px auto 30px;
+}
+
+
+/* =========================================================
+   MESSAGE BOX
+========================================================= */
+
+.message-box {
+    background:
+        linear-gradient(
+            135deg,
+            rgba(255, 242, 246, 0.95),
+            rgba(255, 249, 236, 0.95)
+        );
+
+    border: 1px solid #f1c8d4;
+
+    border-radius: 30px;
+
+    padding: 35px 30px;
+
+    margin-top: 25px;
+
+    box-shadow:
+        0 10px 30px rgba(190, 90, 120, 0.08);
+}
+
+
+/* =========================================================
+   MESSAGE DECORATIONS
+========================================================= */
+
+.message-top-decoration,
+.message-bottom-decoration {
+    font-size: 24px;
+
+    margin-bottom: 18px;
+}
+
+.message-bottom-decoration {
+    margin-top: 22px;
+
+    margin-bottom: 0;
+}
+
+
+/* =========================================================
+   MESSAGE HEADING
+========================================================= */
+
+.message-box h3 {
+    color: #71394e;
+
+    font-size: 28px;
+
+    margin: 15px 0 25px;
+}
+
+#messageName {
+    color: #c94d70;
+}
+
+
+/* =========================================================
+   COMPLETE MESSAGE
+========================================================= */
+
+.complete-message {
+    color: #805568;
+
+    font-size: 17px;
+
+    line-height: 2;
+
+    white-space: pre-line;
+
+    max-width: 700px;
+
+    margin: 0 auto;
+
+    text-align: center;
+}
+
+
+/* =========================================================
+   RAKSHA BANDHAN WISH
+========================================================= */
+
+.raksha-wish {
+    color: #c7476d;
+
+    font-size: 23px;
+
+    font-weight: bold;
+
+    margin-top: 25px;
+}
+
+
+/* =========================================================
+   FOREVER TEXT
+========================================================= */
+
+.forever-text {
+    color: #936778;
+
+    font-size: 16px;
+
+    line-height: 1.8;
+
+    margin: 25px auto 15px;
+
+    max-width: 650px;
+}
+
+
+/* =========================================================
+   SIGNATURE
+========================================================= */
+
+.signature {
+    color: #b36c80;
+
+    font-size: 17px;
+
+    font-style: italic;
+
+    margin-top: 20px;
+}
+
+
+/* =========================================================
+   MUSIC BOX
+========================================================= */
+
+.music-box {
+    margin-top: 30px;
+
+    padding: 35px 25px;
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(255, 242, 246, 0.95),
+            rgba(255, 249, 236, 0.95)
+        );
+
+    border: 1px solid #f1c8d4;
+
+    border-radius: 30px;
+
+    box-shadow:
+        0 10px 30px rgba(190, 90, 120, 0.08);
+}
+
+
+/* =========================================================
+   MUSIC ICON
+========================================================= */
+
+.music-icon {
+    font-size: 45px;
+
+    margin-bottom: 10px;
+}
+
+
+/* =========================================================
+   MUSIC HEADING
+========================================================= */
+
+.music-box h3 {
+    color: #71394e;
+
+    font-size: 25px;
+
+    margin-bottom: 10px;
+}
+
+
+/* =========================================================
+   MUSIC DESCRIPTION
+========================================================= */
+
+.music-box p {
+    color: #986a7b;
+
+    font-size: 15px;
+
+    margin-bottom: 20px;
+}
+
+
+/* =========================================================
+   AUDIO PLAYER
+========================================================= */
+
+.music-box audio {
+    width: 90%;
+
+    max-width: 600px;
+
+    height: 50px;
+}
+
+
+/* =========================================================
+   FINAL BOTTOM DECORATION
+========================================================= */
+
+.final-bottom-decoration {
+    margin-top: 30px;
+
+    font-size: 26px;
+
+    letter-spacing: 8px;
+}
+
+
+/* =========================================================
+   MADE WITH LOVE
+========================================================= */
+
+.made-with-love {
+    color: #a16d7d;
+
+    font-size: 14px;
+
+    margin-top: 18px;
+}
+
+
+/* =========================================================
+   RESPONSIVE - TABLET
+========================================================= */
+
+@media (max-width: 768px) {
+
+    .welcome-card {
+        padding: 35px 25px;
+    }
+
+    .welcome-card h1 {
+        font-size: 40px;
+    }
+
+    .final-page {
+        padding: 30px 12px;
+    }
+
+    .final-card {
+        padding: 40px 20px;
+        border-radius: 30px;
+    }
+
+    .final-card > h1 {
+        font-size: 42px;
+    }
+
+    #finalBrotherName {
+        font-size: 30px;
+    }
+
+    .photo-frame {
+        width: 380px;
+        height: 430px;
+    }
+
+    .message-box {
+        padding: 30px 20px;
+    }
+}
+
+
+/* =========================================================
+   RESPONSIVE - MOBILE
+========================================================= */
+
+@media (max-width: 500px) {
+
+    .page-one,
+    .page-two {
+        padding: 20px 10px;
+    }
+
+    .welcome-card {
+        padding: 30px 18px;
+
+        border-radius: 25px;
+    }
+
+    .welcome-card h1 {
+        font-size: 32px;
+    }
+
+    .small-heading {
+        font-size: 11px;
+        letter-spacing: 3px;
+    }
+
+    .welcome-text {
+        font-size: 16px;
+    }
+
+    .open-button {
+        width: 100%;
+        padding: 14px 15px;
+    }
+
+
+    /* Page Two */
+
+    .wish-card {
+        padding: 30px 15px;
+        border-radius: 25px;
+    }
+
+    .wish-card h1 {
+        font-size: 30px;
+    }
+
+    .rakhi-wrapper {
+        width: 290px;
+    }
+
+    .rakhi-thread {
+        width: 125px;
+    }
+
+
+    /* Final Page */
+
+    .final-card {
+        padding: 30px 14px;
+
+        border-radius: 25px;
+    }
+
+    .final-top {
+        gap: 12px;
+        font-size: 22px;
+    }
+
+    .final-small-title {
+        font-size: 11px;
+        letter-spacing: 4px;
+    }
+
+    .final-card > h1 {
+        font-size: 32px;
+    }
+
+    #finalBrotherName {
+        font-size: 26px;
+    }
+
+
+    /* FULL PHOTO ON MOBILE */
+
+    .photo-frame {
+        width: 100%;
+
+        max-width: 340px;
+
+        height: 400px;
+
+        padding: 7px;
+
+        border-radius: 20px;
+    }
+
+    .photo-glow {
+        border-radius: 14px;
+    }
+
+    .photo-glow img {
+        border-radius: 11px;
+    }
+
+
+    .photo-caption {
+        font-size: 14px;
+
+        line-height: 1.6;
+    }
+
+
+    /* Message */
+
+    .message-box {
+        padding: 25px 15px;
+
+        border-radius: 22px;
+    }
+
+    .message-box h3 {
+        font-size: 23px;
+    }
+
+    .complete-message {
+        font-size: 15px;
+
+        line-height: 1.8;
+    }
+
+    .raksha-wish {
+        font-size: 19px;
+    }
+
+    .forever-text {
+        font-size: 14px;
+    }
+
+
+    /* Music */
+
+    .music-box {
+        padding: 28px 15px;
+
+        border-radius: 22px;
+    }
+
+    .music-box h3 {
+        font-size: 21px;
+    }
+
+    .music-box audio {
+        width: 100%;
+    }
+
+
+    /* Decorations */
+
+    .final-decoration {
+        opacity: 0.75;
+    }
+
+    .flower-one,
+    .flower-two,
+    .flower-three,
+    .flower-four {
+        font-size: 32px;
+    }
+
+    .heart-one,
+    .heart-two,
+    .heart-three {
+        font-size: 24px;
+    }
+
+    .sparkle-one,
+    .sparkle-two,
+    .sparkle-three {
+        font-size: 22px;
+    }
+}
+
+
+/* =========================================================
+   VERY SMALL PHONES
+========================================================= */
+
+@media (max-width: 360px) {
+
+    .welcome-card h1 {
+        font-size: 28px;
+    }
+
+    .final-card > h1 {
+        font-size: 28px;
+    }
+
+    #finalBrotherName {
+        font-size: 23px;
+    }
+
+    .photo-frame {
+        height: 350px;
+    }
+
+    .rakhi-wrapper {
+        transform: scale(0.9);
+    }
+}
